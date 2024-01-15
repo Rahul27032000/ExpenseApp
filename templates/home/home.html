@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block start %}
+{% extends "../base.html" %} {% block start %}
 
 <h2>Expense Tracker</h2>
 
@@ -40,10 +40,7 @@
       />
     </div>
     <div class="form-control">
-      <label for="amount"
-        >Amount <br />
-        (negative - expense, positive - income)</label
-      >
+      <label for="amount">Amount </label>
       <input
         type="number"
         required
@@ -56,8 +53,8 @@
     <div class="form-control">
       <label for="text">Text</label>
       <select name="expense_type" required class="form-control">
-        <option value="Positive">Positive</option>
-        <option value="Negative">Negative</option>
+        <option value="Positive">Income</option>
+        <option value="Negative">Expense</option>
       </select>
     </div>
     <button class="btn" type="submit">Add transaction</button>
