@@ -9,7 +9,7 @@ TYPE = (
 # Create your models here.
 class Expense(models.Model):
     name = models.CharField(max_length=100)
-    Expense_type = models.CharField(max_length=8, choices=TYPE)
+    expense_type = models.CharField(max_length=8, choices=TYPE)
     amount = models.FloatField()
     user = models.ForeignKey(User,on_delete=models.CASCADE)
 
